@@ -1,0 +1,44 @@
+.menu-lista{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: inherit;
+
+}
+
+.menu-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+
+  padding: 10px 20px 10px 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu-item:hover{
+  transform: scale(1);
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px; /* Altura da borda superior */
+  background-color: white; /* Cor da borda */
+  transform: scaleX(0); /* Inicialmente, a borda está invisível */
+  transform-origin: center; /* Origem da transformação */
+  transition: transform 0.5s ease; /* Transição suave para a transformação */
+}
+
+.menu-item:hover::before {
+  transform: scaleX(1);
+}

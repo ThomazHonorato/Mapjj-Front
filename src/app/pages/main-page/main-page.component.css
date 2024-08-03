@@ -1,0 +1,23 @@
+.main-page-container{
+  flex-direction: column;
+  min-height: inherit;
+  width: inherit;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+.main-page-content {
+  width: 100vh;
+  flex: 1; /* O conteúdo ocupa todo o espaço disponível */
+  box-sizing: border-box;
+}
+
+.main-page-header{
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-page-footer{
+  width: 100%;
+  flex: 0 0 auto;
+}
