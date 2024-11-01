@@ -11,11 +11,11 @@ export class HeaderComponent implements OnInit {
  currentRoute: any;
 
   menuItems = [
-    {label: 'Home', link: rotas.home},
-    {label: "Galeria", link: rotas.galeria},
-    {label: "Eventos", link: rotas.eventos},
-    {label: "Live", link: rotas.live},
-    {label: "Sobre", link: rotas.sobre},
+    {label: 'HOME', link: rotas.home},
+    {label: "GALERIA", link: rotas.galeria},
+    {label: "EVENTOS", link: rotas.eventos},
+    {label: "LIVE", link: rotas.live},
+    {label: "SOBRE", link: rotas.sobre},
   ]
 
   constructor(private router: Router) {

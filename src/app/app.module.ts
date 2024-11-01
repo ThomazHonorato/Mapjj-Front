@@ -1,15 +1,16 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 import {SharedModule} from '../shared/shared.module';
+import {ReactiveFormsModule} from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { GaleriaComponent } from './pages/galeria/galeria.component';
-import { SobreComponent } from './pages/sobre/sobre.component';
-import { LiveComponent } from './pages/live/live.component';
-import { EventosComponent } from './pages/eventos/eventos.component';
-import { SouNovoComponent } from './pages/sou-novo/sou-novo.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {HomeComponent} from './pages/home/home.component';
+import {GaleriaComponent} from './pages/galeria/galeria.component';
+import {SobreComponent} from './pages/sobre/sobre.component';
+import {LiveComponent} from './pages/live/live.component';
+import {EventosComponent} from './pages/eventos/eventos.component';
+import {SouNovoComponent} from './pages/sou-novo/sou-novo.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,10 @@ import { SouNovoComponent } from './pages/sou-novo/sou-novo.component';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

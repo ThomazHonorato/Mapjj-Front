@@ -11,7 +11,8 @@ import {RouterLink} from '@angular/router';
   ],
   imports: [CommonModule, RouterLink],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule {}

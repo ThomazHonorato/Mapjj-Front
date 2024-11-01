@@ -1,2 +1,44 @@
 <app-header></app-header>
-<p>sou-novo works!</p>
+<main>
+
+  <div class="fundo-form">
+
+    <img src="assets/images/FundoPapiro.webp" alt="Fundo Form">
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" formControlName="nome">
+        <div *ngIf="form.get('nome')?.invalid && form.get('nome')?.touched" class="error">
+          Nome é obrigatório.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" formControlName="telefone">
+        <div *ngIf="form.get('telefone')?.invalid && form.get('telefone')?.touched" class="error">
+          Telefone é obrigatório e deve conter apenas números.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" formControlName="endereco">
+        <div *ngIf="form.get('endereco')?.invalid && form.get('endereco')?.touched" class="error">
+          Endereço é obrigatório.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" formControlName="mensagem" rows="4"></textarea>
+        <div *ngIf="form.get('mensagem')?.invalid && form.get('mensagem')?.touched" class="error">
+          Mensagem é obrigatória.
+        </div>
+      </div>
+      <button type="submit" class="submit-button" [disabled]="form.invalid">Enviar</button>
+    </form>
+    <h2 class="quote-text">"Para que todo aquele que nele crê não pereça, mas tenha a vida eterna."</h2>
+    <h2 class="quote-author">João 3-16</h2>
+  </div>
+</main>
+<app-footer></app-footer>
+

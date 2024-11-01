@@ -1,0 +1,136 @@
+*{
+  background: transparent !important;
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilização do fundo e posicionamento do formulário */
+.fundo-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa a altura total da tela */
+  overflow: hidden;
+}
+
+.fundo-form img {
+  max-width: 1200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Estilização do formulário */
+form {
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo semitransparente */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  background-color: transparent;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(105, 79, 79, 0.5);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #007bff !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+  font-weight: 800;
+}
+
+/* Estilização da citação */
+.quote-text {
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte serifada para dar elegância */
+  font-size: 1.5em;
+  font-style: italic;
+  color: #555; /* Cor suave */
+  text-align: center;
+  max-width: 80%;
+  margin: 20px auto;
+  position: relative;
+  line-height: 1.5;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+/* Aspas antes e depois */
+.quote-text::before {
+  content: '“';
+  font-size: 2em;
+  color: #d3cdc7; /* Cor suave para as aspas decorativas */
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+
+.quote-text::after {
+  content: '”';
+  font-size: 2em;
+  color: #d3cdc7;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+}
+
+/* Estilização para o autor da citação, se necessário */
+.quote-author {
+  display: block;
+  font-size: 1.4em;
+  color: #888;
+  text-align: center;
+  z-index: 2;
+}
+
