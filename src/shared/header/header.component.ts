@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
     {label: 'HOME', link: rotas.home},
     {label: "GALERIA", link: rotas.galeria},
     {label: "EVENTOS", link: rotas.eventos},
+    {label: "AGENDA", link: rotas.agenda},
     {label: "LIVE", link: rotas.live},
     {label: "SOBRE", link: rotas.sobre},
   ]

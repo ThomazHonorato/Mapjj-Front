@@ -7,6 +7,17 @@ main{
   margin: 0 auto;
 }
 
+.convite{
+  z-index: 2;
+  margin-top: -200px;
+}
+
+.sub-convite{
+  margin-top: 10px;
+  z-index: 2;
+  margin-bottom: 80px;
+}
+
 /* Estilização do fundo e posicionamento do formulário */
 .fundo-form {
   position: relative;

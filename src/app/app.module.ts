@@ -11,6 +11,7 @@ import {SobreComponent} from './pages/sobre/sobre.component';
 import {LiveComponent} from './pages/live/live.component';
 import {EventosComponent} from './pages/eventos/eventos.component';
 import {SouNovoComponent} from './pages/sou-novo/sou-novo.component';
+import { AgendaComponent } from './pages/agenda/agenda.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {SouNovoComponent} from './pages/sou-novo/sou-novo.component';
     SobreComponent,
     LiveComponent,
     EventosComponent,
-    SouNovoComponent
+    SouNovoComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,

@@ -7,11 +7,13 @@ import {EventosComponent} from './pages/eventos/eventos.component';
 import {LiveComponent} from './pages/live/live.component';
 import {SobreComponent} from './pages/sobre/sobre.component';
 import {SouNovoComponent} from './pages/sou-novo/sou-novo.component';
+import {AgendaComponent} from './pages/agenda/agenda.component';
 
 const routes: Routes = [
   {path: rotas.home, component: HomeComponent},
   {path: rotas.galeria, component: GaleriaComponent},
   {path: rotas.eventos, component: EventosComponent},
+  {path: rotas.agenda, component: AgendaComponent},
   {path: rotas.live, component: LiveComponent},
   {path: rotas.sobre, component: SobreComponent},
   {path: rotas.souNovo, component: SouNovoComponent},

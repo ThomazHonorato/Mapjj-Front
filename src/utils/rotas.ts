@@ -5,4 +5,5 @@ export enum rotas {
   galeria = "galeria",
   eventos = "eventos",
   souNovo = "souNovo",
+  agenda = "agenda",
 }
