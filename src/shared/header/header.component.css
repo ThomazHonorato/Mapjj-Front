@@ -1,0 +1,64 @@
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 8px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.active {
+  color: #007bff;
+  box-shadow: inset 0 -2px 0 0 #007bff;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  position: relative;
+  display: inline-block;
+}
+
+.logo img{
+  max-width: 80px;
+  max-height: 60px;
+  transition: 0.4s ease
+}
+
+/*.logo img:hover{
+  cursor: pointer;
+  box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.5);
+}*/
+
+.logo:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%; /* Faz o efeito parecer circular */
+  background: rgba(0, 123, 255, 0.4); /* Luz azul suave */
+  filter: blur(15px); /* Efeito de desfoque para suavizar a luz */
+  z-index: -1; /* Coloca o brilho atrás da imagem */
+}
+
+.sou-novo{
+  background: #007bff;
+  padding: 12px;
+  border-radius: 6px;
+  border: 0px;
+}
+
+.sou-novo:hover{
+  cursor: pointer;
+  background: #2974ce;
+}
